@@ -25,11 +25,10 @@ func main() {
 		panic("mp3.NewDecoder failed: " + err.Error())
 	}
 
-	samplingRate := 34400
+	samplingRate := 54400
 
-	numOfChannels := 2
+	numOfChannels := 5 //播放速度
 
-	// Bytes used by a channel to represent one sample. Either 1 or 2 (usually 2).
 	audioBitDepth := 2
 
 	// Remember that you should **not** create more than one context
